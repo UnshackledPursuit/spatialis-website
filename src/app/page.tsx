@@ -63,12 +63,12 @@ export default function Home() {
                 Spatial Drawing for visionOS
               </div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-                Draw in{" "}
-                <span className="gradient-text">Three Dimensions</span>
+                Create in{" "}
+                <span className="gradient-text">Every Dimension</span>
               </h1>
               <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-xl mx-auto lg:mx-0">
-                Create 3D art that floats in your physical space. Powerful brushes,
-                layers, and USDZ export.
+                Spatial drawing for visionOS. Brushes, layers, and USDZ export.
+                Your space is your canvas.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                 <Button size="lg" asChild>
@@ -392,7 +392,7 @@ export default function Home() {
             Start Creating Today
           </h2>
           <p className="text-lg text-muted-foreground mb-8">
-            Transform your space into a canvas. Draw freely in three dimensions.
+            Create in every dimension. Your space is your canvas.
           </p>
           <Button size="lg" asChild>
             <a
