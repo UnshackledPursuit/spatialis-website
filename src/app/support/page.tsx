@@ -41,8 +41,11 @@ export default function Support() {
                   Have a question or need help? We&apos;d love to hear from you. We&apos;re actively improving Spatialis and your feedback helps shape what comes next.
                 </p>
                 <div className="flex flex-wrap gap-3">
+                  <Link href="/feedback">
+                    <Button>Send Feedback</Button>
+                  </Link>
                   <a href="mailto:info@unshackledpursuit.com">
-                    <Button>Email Support</Button>
+                    <Button variant="outline">Email Support</Button>
                   </a>
                 </div>
               </div>

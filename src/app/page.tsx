@@ -165,8 +165,8 @@ export default function Home() {
                   Powerful Brushes
                 </h3>
                 <p className="text-muted-foreground">
-                  Round, Flat, Calligraphy, Ink Pen, Marker, and more. Each brush
-                  creates unique strokes in 3D space.
+                  Round, Flat, Dotted, Calligraphy, Ink Pen, Marker, and more.
+                  From smooth ribbons to particle trails in 3D space.
                 </p>
               </CardContent>
             </Card>
@@ -182,7 +182,7 @@ export default function Home() {
                 </h3>
                 <p className="text-muted-foreground">
                   Organize complex drawings with layers. Adjust opacity,
-                  visibility, and lock layers to protect your work.
+                  visibility, transform, and lock layers to protect your work.
                 </p>
               </CardContent>
             </Card>
