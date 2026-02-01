@@ -1,8 +1,8 @@
 import { NextResponse } from "next/server";
 
-const SUPABASE_URL = "https://ygcgzwlzyrvwshtlxpsc.supabase.co";
-const SUPABASE_KEY = "sb_secret_I08Y_tg9OKPxw7l4C0HPeQ_lJegVaiG";
-const USER_ID = "18a92969-5664-4d63-95fc-d8481e6c42e2";
+const SUPABASE_URL = process.env.SUPABASE_URL!;
+const SUPABASE_KEY = process.env.SUPABASE_SERVICE_KEY!;
+const USER_ID = process.env.SUPABASE_USER_ID!;
 
 export async function POST(request: Request) {
   try {
