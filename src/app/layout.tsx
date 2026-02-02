@@ -13,39 +13,43 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Spatialis - Spatial Drawing for visionOS",
+  title: "Spatialis - Create in Every Dimension",
   description:
-    "Draw in three dimensions. Create 3D art that floats in your physical space. Powerful brushes, layers, and USDZ export for visionOS.",
+    "Spatial canvas for visionOS. Draw in the air, export anywhere. Sketch ideas, annotate 3D models, take spatial notes. Then export and share with anyone.",
   keywords: [
-    "spatialis",
-    "spatial drawing",
-    "3D art",
-    "visionos",
-    "brushes",
-    "layers",
+    "spatial",
+    "3D",
+    "visionOS",
+    "sketch",
+    "notes",
     "USDZ",
+    "layers",
     "creative",
     "design",
-    "sketch",
+    "annotate",
+    "canvas",
   ],
   authors: [{ name: "Unshackled Pursuit" }],
   openGraph: {
-    title: "Spatialis - Spatial Drawing for visionOS",
+    title: "Spatialis - Create in Every Dimension",
     description:
-      "Draw in three dimensions. Create 3D art that floats in your physical space.",
+      "Draw in the air. Export anywhere. Spatial canvas for visionOS.",
     type: "website",
     locale: "en_US",
     siteName: "Spatialis",
+    url: "https://spatialis.app",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Spatialis - Spatial Drawing",
-    description: "Create 3D art in your physical space. Designed for visionOS.",
+    title: "Spatialis - Create in Every Dimension",
+    description: "Spatial canvas for visionOS. Draw in the air. Export anywhere.",
+    creator: "@spatialisapp",
   },
   robots: {
     index: true,
     follow: true,
   },
+  metadataBase: new URL("https://spatialis.app"),
 };
 
 export default function RootLayout({

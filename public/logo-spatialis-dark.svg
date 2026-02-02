@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <!-- Orb gradient - creates 3D depth effect -->
+    <radialGradient id="orbDepthDark" cx="40%" cy="35%" r="55%" fx="35%" fy="30%">
+      <stop offset="0%" stop-color="#5CE1E6"/>
+      <stop offset="40%" stop-color="#00D4E8"/>
+      <stop offset="70%" stop-color="#0A9BAA"/>
+      <stop offset="100%" stop-color="#0A4D5C"/>
+    </radialGradient>
+
+    <!-- Highlight for depth -->
+    <radialGradient id="orbHighlightDark" cx="30%" cy="25%" r="40%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Glow effect for dark backgrounds -->
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Outer ring with glow -->
+  <circle
+    cx="100" cy="100" r="88"
+    fill="none"
+    stroke="#00D4E8"
+    stroke-width="2.5"
+    opacity="0.8"
+    filter="url(#glow)"
+  />
+
+  <!-- Middle ring -->
+  <circle
+    cx="100" cy="100" r="68"
+    fill="none"
+    stroke="#00D4E8"
+    stroke-width="2"
+    opacity="0.6"
+  />
+
+  <!-- Inner ring -->
+  <circle
+    cx="100" cy="100" r="48"
+    fill="none"
+    stroke="#00D4E8"
+    stroke-width="1.5"
+    opacity="0.4"
+  />
+
+  <!-- Center orb with depth -->
+  <circle
+    cx="100" cy="100" r="22"
+    fill="url(#orbDepthDark)"
+    filter="url(#glow)"
+  />
+
+  <!-- Highlight overlay -->
+  <circle
+    cx="100" cy="100" r="22"
+    fill="url(#orbHighlightDark)"
+  />
+
+</svg>
